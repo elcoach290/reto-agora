@@ -1,0 +1,47 @@
+.container{
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container__report{
+    padding: 15px;
+    border: solid 1px lime;
+    margin-bottom: 15px;
+}
+
+.client-container{
+    overflow: scroll;
+}
+
+.client{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border-bottom: solid 1px lime;
+    padding: 3px 0;
+    min-width: 600px;
+}
+
+.client > div{
+    align-self: center;
+}
+.client__options{
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+}
+.client__button{
+    background: #121212;
+    padding: 12px 30px;
+    color: lime;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background 300ms;
+}
+
+.client__button:hover{
+    background: #000;
+}
